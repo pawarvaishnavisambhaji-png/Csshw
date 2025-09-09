@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball</title>
+    <style><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BouncingBall</title>
+    <style>
+        .box {
+            margin-top: 100px;
+            margin-left : 20px;
+            background-color: grey;
+            height: 300px;
+            width: 300px;
+            color: black;
+            font-size: 30px;
+            border-radius: 100%;
+
+
+            animation: bouncingball 1.2s linear infinite alternate both;
+        }
+
+      
+        @keyframes bouncingball{
+          
+          0% {
+        transform: translateY(0) scaleX(1) scaleY(1);
+      }
+
+      
+      45% {
+        transform: translateY(220px) ;
+      }
+
+      
+      50% {
+        transform: translateY(240px);
+      }
+      
+      65% {
+        transform: translateY(120px);
+      }
+
+      100% {
+        transform: translateY(0) scaleX(1) scaleY(1);
+      }
+          
+        }  
+    </style>
+</head>
+
+<body>
+
+    <div class="box"> </div>
+</body>
+
+</html>
+        body {
+            margin: 10px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            background: #f0f0f0;
+            overflow: hidden;
+            background-color: gray;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(133, 182, 35);
+            border-radius: 50%;
+            position: relative;
+            animation: bounce 1s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                top: 0;
+                animation-timing-function: ease-in;
+            }
+
+            50% {
+                top: 300px;
+                animation-timing-function: ease-out;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ball"></div>
+
+</body>
+
+</html>
